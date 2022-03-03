@@ -1,7 +1,19 @@
 import random
 
-secret_number = round(random.randrange(1,101))
-tried = 3
+secret_number = random.randrange(1,101)
+tried = 0
+
+level = int(input('Escolha o nível de dificuldade: 1 (fácil), 2 (médio) ou 3 (difícil): '))
+
+if (level == 1):
+    tried = 20
+elif (level == 2):
+    tried = 10
+elif (level == 3):
+    tried = 5
+else:
+    print('NÍVEL INVÁLIDO!')
+
 
 for round in range(1, tried+1):
     print('Rodada {} de {}'.format(round, tried))
