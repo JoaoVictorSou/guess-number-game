@@ -49,3 +49,6 @@ def jogar():
             print('Caractere inválido!')
         score -= difference*element/4
     print('THE END')
+
+if (__name__ == '__main__'):
+    jogar()
