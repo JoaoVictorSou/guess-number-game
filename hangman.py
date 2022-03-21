@@ -1,7 +1,20 @@
+import random
+
+
 def jogar():
     print('------------------------ FORCA ------------------------')
     
-    secret_word = 'banana'.upper()
+    file_words = open('palavras.txt', 'r')
+    words = []
+    for line in file_words:
+        words.append(line.strip().upper())
+
+    file_words.close()
+
+    print(words)
+
+    word_index = random.randrange(len(words))
+    secret_word = words[word_index]
     win = False
     hanged = False
     err = 0
