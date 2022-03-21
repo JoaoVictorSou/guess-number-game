@@ -33,6 +33,7 @@ def jogar():
         print('YOU WIN!')
     elif (hanged):
         print('GAME OVER!')
+    print('THE END')
 
 if (__name__ == '__main__'):
     jogar()
